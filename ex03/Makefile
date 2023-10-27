@@ -1,4 +1,4 @@
-NAME = AForm
+NAME = Intern
 CC = c++
 FLAGS = -Wall -Wextra -Werror -std=c++98
 FILES = Bureaucrat \
@@ -6,6 +6,7 @@ FILES = Bureaucrat \
 		PresidentialPardonForm \
 		RobotomyRequestForm \
 		ShrubberyCreationForm \
+		Intern \
 		main
 
 INCLS = Bureaucrat.hpp \
@@ -13,6 +14,7 @@ INCLS = Bureaucrat.hpp \
 		PresidentialPardonForm.hpp \
 		RobotomyRequestForm.hpp \
 		ShrubberyCreationForm.hpp \
+		Intern.hpp
 
 SRCS = $(addsuffix .cpp, $(FILES))
 OBJS = $(addsuffix .o, $(FILES))
