@@ -12,9 +12,9 @@ class Form;
 class RobotomyRequestForm : public Form
 {
 private:
+	RobotomyRequestForm();
 	std::string	target;
 public:
-	RobotomyRequestForm();
 	RobotomyRequestForm(const std::string &target);
 	RobotomyRequestForm(RobotomyRequestForm const &copy);
 	RobotomyRequestForm &operator = (RobotomyRequestForm const &obj);

@@ -12,9 +12,9 @@ class Form;
 class ShrubberyCreationForm : public Form
 {
 private:
+	ShrubberyCreationForm();
 	std::string	target;
 public:
-	ShrubberyCreationForm();
 	ShrubberyCreationForm(const std::string &target);
 	ShrubberyCreationForm(ShrubberyCreationForm const &copy);
 	ShrubberyCreationForm &operator = (ShrubberyCreationForm const &obj);

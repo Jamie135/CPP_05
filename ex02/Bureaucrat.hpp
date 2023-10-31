@@ -10,10 +10,10 @@ class Form;
 class Bureaucrat
 {
 private:
+	Bureaucrat();
 	const std::string name;
 	int	grade;
 public:
-	Bureaucrat();
 	Bureaucrat(const std::string& name, int grade);
 	Bureaucrat(Bureaucrat const &copy);
 	~Bureaucrat();

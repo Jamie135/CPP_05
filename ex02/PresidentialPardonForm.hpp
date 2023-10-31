@@ -11,9 +11,9 @@ class Form;
 class PresidentialPardonForm : public Form
 {
 private:
+	PresidentialPardonForm();
 	std::string	target;
 public:
-	PresidentialPardonForm();
 	PresidentialPardonForm(const std::string &target);
 	PresidentialPardonForm(PresidentialPardonForm const &copy);
 	PresidentialPardonForm &operator = (PresidentialPardonForm const &obj);

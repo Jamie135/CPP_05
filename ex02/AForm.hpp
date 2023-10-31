@@ -10,12 +10,12 @@ class Bureaucrat;
 class Form
 {
 private:
+	Form();
 	const std::string	name;
 	bool				signedFlag;
 	const int			gradeSigned;
 	const int			gradeRequired;
 public:
-	Form();
 	Form(const std::string &name, int gradeSigned, int gradeRequired);
 	Form(Form &copy);
 	Form& operator=(const Form& obj);
