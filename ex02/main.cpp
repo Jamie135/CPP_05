@@ -18,7 +18,7 @@ int	main()
 			b.signForm(*shrub);
 			
 			a.executeForm(*shrub);
-			// delete shrub;
+			delete shrub;
 		}
 		catch (Bureaucrat::GradeTooLowException& e)
 		{
