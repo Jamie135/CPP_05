@@ -5,7 +5,7 @@ RobotomyRequestForm::RobotomyRequestForm(const std::string &target)
 {}
 
 RobotomyRequestForm::RobotomyRequestForm(RobotomyRequestForm const &copy)
-	: Form("RobotomyRequestForm", 72, 45), target(copy.target)
+	: Form("Robotomy Request Form", 72, 45), target(copy.target)
 {
 	*this = copy;
 }
