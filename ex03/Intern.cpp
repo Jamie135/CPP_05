@@ -17,6 +17,11 @@ Intern& Intern::operator=(const Intern &intern)
 Intern::~Intern()
 {}
 
+const char *Intern::InvalidForm::what(void) const throw()
+{
+	return ("This form doesn't exist and can't be created");
+}
+
 Form*	Intern::makeForm(std::string name, std::string target)
 {
 	static std::string	keys[3] = {"RobotomyRequestForm", "PresidentialPardonForm", "ShrubberyCreationForm"};

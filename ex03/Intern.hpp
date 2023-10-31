@@ -19,9 +19,6 @@ public:
 	class InvalidForm : public std::exception
 	{
 		public :
-			const char *what () const throw ()
-			{
-				return ("This form doesn't exist and can't be created");
-			}
+			const char *what () const throw ();
 	};
 };

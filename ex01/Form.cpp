@@ -54,7 +54,10 @@ int		Form::getGradeRequire() const
 void	Form::beSigned(const Bureaucrat &bureaucrat)
 {
 	if (bureaucrat.getGrade() <= gradeSigned)
-		signedFlag = true;
+	{
+		if (!signedFlag)
+			signedFlag = true;
+	}
 	else
 		throw Form::GradeTooLowException();
 }

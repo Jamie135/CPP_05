@@ -74,3 +74,13 @@ std::ostream &operator<<(std::ostream &o, Bureaucrat &obj)
 	o << obj.getName() << ", bureaucrat grade " << obj.getGrade();
 	return (o);
 }
+
+const char *Bureaucrat::GradeTooLowException::what(void) const throw()
+{
+	return ("Grade too low");
+};
+
+const char *Bureaucrat::GradeTooHighException::what(void) const throw()
+{
+	return ("Grade too high");
+};
